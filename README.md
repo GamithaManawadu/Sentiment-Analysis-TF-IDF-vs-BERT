@@ -25,9 +25,9 @@ A comprehensive comparison of **three NLP approaches** to sentiment classificati
 
 ### Core Comparison
 
-- **Approach A —> TF-IDF + Traditional ML:** 15,000 TF-IDF features (unigrams + bigrams), 4 models compared with cross-validation
-- **Approach B —> BERT Zero-Shot:** Pre-trained DistilBERT (SST-2) applied directly - no IMDB training
-- **Approach C —> BERT Fine-Tuned:** DistilBERT fine-tuned for 3 epochs on IMDB (LR=2e-5, batch=16)
+- **Approach A -> TF-IDF + Traditional ML:** 15,000 TF-IDF features (unigrams + bigrams), 4 models compared with cross-validation
+- **Approach B -> BERT Zero-Shot:** Pre-trained DistilBERT (SST-2) applied directly - no IMDB training
+- **Approach C -> BERT Fine-Tuned:** DistilBERT fine-tuned for 3 epochs on IMDB (LR=2e-5, batch=16)
 
 ### Advanced Analysis
 
