@@ -1,4 +1,4 @@
-# 😊 Sentiment Analysis: TF-IDF vs BERT
+# Sentiment Analysis: TF-IDF vs BERT
 
 A comprehensive comparison of **three NLP approaches** to sentiment classification on IMDB movie reviews using: traditional ML, zero-shot transfer learning(BERT), and fine-tuned transformers.
 
