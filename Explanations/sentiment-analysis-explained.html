@@ -164,6 +164,9 @@
       <tr><td>Average review length</td><td>~230 words</td></tr>
       <tr><td>Source</td><td>HuggingFace <code>datasets</code> library</td></tr>
     </table>
+
+    <img class="nb-img" src="../images/Dataset.png" alt="Class Distribution">
+
     <p>EDA revealed balanced classes, similar length distributions for both sentiments, and distinctive word clouds, positive reviews feature "great", "love", "best" while negative reviews feature "bad", "worst", "boring".</p>
   </div></div>
 </div>
@@ -186,6 +189,9 @@
     <p>Two variants tested: basic cleaning and <strong>negation-aware</strong> ("not good" → "not_good"). Negation gave a tiny +0.04% boost. <strong>VADER augmentation</strong> (adding rule-based sentiment scores) actually hurt by -0.5%, TF-IDF already captured sentiment more effectively.</p>
 
     <h3 class="sub" style="color:var(--tfidf);">Results : 4 Models + 5-Fold CV</h3>
+
+    <img class="nb-img" src="../images/cross_validation.png" alt="Cross-Validation">
+
     <div class="bar-visual">
       <div class="bar-row"><div class="bar-label" style="color:var(--tfidf);">Logistic Regression</div><div class="bar-track"><div class="bar-fill" style="width:89.5%;background:var(--tfidf);">89.5%</div></div></div>
       <div class="bar-row"><div class="bar-label" style="color:#D35400;">Linear SVM</div><div class="bar-track"><div class="bar-fill" style="width:88.5%;background:#D35400;">88.5%</div></div></div>
@@ -206,6 +212,9 @@
   </div>
   <div class="section-body"><div class="section-content">
     <p>DistilBERT fine-tuned on SST-2 (a different sentiment dataset) was applied directly to IMDB with no training. RoBERTa-large was also tested for comparison.</p>
+
+    <img class="nb-img" src="../images/RoBERTa_comparison.png" alt="RoBERTa Comparison">
+
     <div class="bar-visual">
       <div class="bar-row"><div class="bar-label" style="color:var(--rob);">RoBERTa-large</div><div class="bar-track"><div class="bar-fill" style="width:95.4%;background:var(--rob);">95.4%*</div></div></div>
       <div class="bar-row"><div class="bar-label" style="color:var(--bert);">DistilBERT</div><div class="bar-track"><div class="bar-fill" style="width:91.7%;background:var(--bert);">91.7%</div></div></div>
@@ -225,6 +234,9 @@
   </div>
   <div class="section-body"><div class="section-content">
     <p>Fine-tuning the zero-shot DistilBERT on all 25,000 IMDB training reviews, updating its weights to specialize on this exact task. Same two-stage transfer learning from Parts 4–5.</p>
+
+    <img class="nb-img" src="../images/big_comparison.png" alt="Big Comparison">
+
     <div class="bar-visual">
       <div class="bar-row"><div class="bar-label" style="color:var(--ft);">Fine-Tuned BERT</div><div class="bar-track"><div class="bar-fill" style="width:93.3%;background:var(--ft);">93.3%</div></div></div>
       <div class="bar-row"><div class="bar-label" style="color:var(--bert);">Zero-Shot BERT</div><div class="bar-track"><div class="bar-fill" style="width:91.7%;background:var(--bert);">91.7%</div></div></div>
@@ -244,6 +256,9 @@
   <div class="section-body"><div class="section-content">
 
     <h3 class="sub" style="color:var(--rob);">Learning Curve - How Much Data Does Each Approach Need?</h3>
+
+    <img class="nb-img" src="../images/learning_curve.png" alt="Learning Curve">
+
     <table class="nice-table">
       <tr><th style="background:var(--rob);">Training Examples</th><th style="background:var(--rob);">TF-IDF + LogReg</th><th style="background:var(--rob);">BERT (Zero-Shot)</th></tr>
       <tr><td>100</td><td>58.5%</td><td rowspan="6" style="vertical-align:middle;text-align:center;font-weight:700;color:var(--bert);background:rgba(139,92,246,.06);">91.7%<br><small>(needs zero<br>IMDB examples)</small></td></tr>
@@ -256,6 +271,9 @@
     <p>Even with ALL 25,000 training examples, TF-IDF never catches BERT's zero-shot performance.</p>
 
     <h3 class="sub" style="color:var(--rob);">Ensemble - Combining the Best of Both</h3>
+
+    <img class="nb-img" src="../images/ensemble_comparison.png" alt="Ensemble Comparison">
+
     <p>Soft-voting (averaging LogReg + BERT probabilities) reached <strong>92.4%</strong>better than either alone (+0.7% over BERT). They make <em>different</em> mistakes: BERT won 370 cases LogReg missed; LogReg won 223 cases BERT missed.</p>
 
     <h3 class="sub" style="color:var(--rob);">Speed Benchmark</h3>

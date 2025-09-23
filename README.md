@@ -2,11 +2,17 @@
 
 A comprehensive comparison of **three NLP approaches** to sentiment classification on IMDB movie reviews using: traditional ML, zero-shot transfer learning(BERT), and fine-tuned transformers.
 
+<p align="center">
+  <img src="images/cover.png" width="32%">
+  <img src="images/Dataset.png" width="32%">
+  <img src="images/ensemble_comparison.png" width="32%">
+</p>
+
 > **💡 [View the Interactive Explanation →](https://htmlpreview.github.io/?https://github.com/GamithaManawadu/Sentiment-Analysis-TF-IDF-vs-BERT/blob/main/Explanations/sentiment-analysis-explained.html)**
 
 ---
 
-## 🎯 Results
+## Results
 
 | Model                        | Approach          | Training on IMDB? | Accuracy  |
 | ---------------------------- | ----------------- | :---------------: | :-------: |
@@ -21,7 +27,7 @@ A comprehensive comparison of **three NLP approaches** to sentiment classificati
 
 ---
 
-## 📊 What's Inside
+## What's Inside
 
 ### Core Comparison
 
@@ -44,7 +50,7 @@ A comprehensive comparison of **three NLP approaches** to sentiment classificati
 
 ---
 
-## 🗂️ Repository Structure
+## Repository Structure
 
 ```
 ├── sentiment-analysis.ipynb              # Main notebook (all code + analysis)
@@ -56,7 +62,7 @@ A comprehensive comparison of **three NLP approaches** to sentiment classificati
 
 ---
 
-## 💡 Key Takeaways
+## Key Takeaways
 
 - **Transfer learning wins in NLP** - same pattern as computer vision (MobileNetV2 crushing from-scratch CNNs)
 - **Linear models beat tree-based models on sparse text** - LogReg > XGBoost on TF-IDF features (opposite of tabular data)
@@ -65,7 +71,7 @@ A comprehensive comparison of **three NLP approaches** to sentiment classificati
 
 ---
 
-## ⚙️ Setup
+## Setup
 
 ```bash
 git clone https://github.com/GamithaManawadu/Sentiment-Analysis-TF-IDF-vs-BERT.git
