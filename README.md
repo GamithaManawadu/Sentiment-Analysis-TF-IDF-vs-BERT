@@ -3,7 +3,7 @@
 A comprehensive comparison of **three NLP approaches** to sentiment classification on IMDB movie reviews using: traditional ML, zero-shot transfer learning(BERT), and fine-tuned transformers.
 
 <p align="center">
-  <img src="images/covers.png" width="48%">
+  <img src="images/cover.png" width="48%">
   <img src="images/Dataset.png" width="48%">
   
 </p>
