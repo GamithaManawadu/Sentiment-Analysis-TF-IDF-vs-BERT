@@ -3,9 +3,9 @@
 A comprehensive comparison of **three NLP approaches** to sentiment classification on IMDB movie reviews using: traditional ML, zero-shot transfer learning(BERT), and fine-tuned transformers.
 
 <p align="center">
-  <img src="images/cover.png" width="32%">
-  <img src="images/Dataset.png" width="32%">
-  <img src="images/ensemble_comparison.png" width="32%">
+  <img src="images/cover.png" width="32%" height ="50%">
+  <img src="images/Dataset.png" width="32%" height="50%">
+  <img src="images/ensemble_comparison.png" width="32%" height="50%">
 </p>
 
 > **💡 [View the Interactive Explanation →](https://htmlpreview.github.io/?https://github.com/GamithaManawadu/Sentiment-Analysis-TF-IDF-vs-BERT/blob/main/Explanations/sentiment-analysis-explained.html)**
